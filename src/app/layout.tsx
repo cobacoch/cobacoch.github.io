@@ -8,18 +8,25 @@ const notoSansJP = Noto_Sans_JP({
 });
 
 export const metadata: Metadata = {
-  title: 'COBACO.CH',
-  description: 'cobaco page',
-}
+  title: "COBACO.CH",
+  description: "cobaco page",
+};
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   return (
     <html lang="en">
-      <body className={cx(notoSansJP.className, css({ display: "flex", minH: "100vh" }))}>{children}</body>
+      <body
+        className={cx(
+          notoSansJP.className,
+          css({ display: "flex", minH: "100vh" }),
+        )}
+      >
+        {children}
+      </body>
     </html>
   );
 }

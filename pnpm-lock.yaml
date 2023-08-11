@@ -37,9 +37,15 @@ devDependencies:
   '@pandacss/dev':
     specifier: ^0.11.0
     version: 0.11.0(@internationalized/date@3.4.0)(@types/node@20.4.9)(@types/react-dom@18.2.7)(@types/react@18.2.20)(typescript@5.1.6)
+  husky:
+    specifier: ^8.0.0
+    version: 8.0.0
   next-export-optimize-images:
     specifier: ^3.1.0
     version: 3.1.0(next@13.4.13)(react-dom@18.2.0)(react@18.2.0)
+  prettier:
+    specifier: ^3.0.1
+    version: 3.0.1
 
 packages:
 
@@ -3888,6 +3894,12 @@ packages:
     engines: {node: '>=14.18.0'}
     dev: true
 
+  /husky@8.0.0:
+    resolution: {integrity: sha512-4qbE/5dzNDNxFEkX9MNRPKl5+omTXQzdILCUWiqG/lWIAioiM5vln265/l6I2Zx8gpW8l1ukZwGQeCFbBZ6+6w==}
+    engines: {node: '>=14'}
+    hasBin: true
+    dev: true
+
   /ieee754@1.2.1:
     resolution: {integrity: sha512-dcyqhDvX1C46lXZcVqCpK+FtMRQVdIMN6/Df5js2zouUsqG7I6sFxitIC+7KYK29KdXOLHdu9zL4sFnoVQnqaA==}
     dev: true
@@ -5365,6 +5377,12 @@ packages:
   /prettier@2.8.8:
     resolution: {integrity: sha512-tdN8qQGvNjw4CHbY+XXk0JgCXn9QiF21a55rBe5LJAU+kDyC4WQn4+awm2Xfk2lQMk5fKup9XgzTZtGkjBdP9Q==}
     engines: {node: '>=10.13.0'}
+    hasBin: true
+    dev: true
+
+  /prettier@3.0.1:
+    resolution: {integrity: sha512-fcOWSnnpCrovBsmFZIGIy9UqK2FaI7Hqax+DIO0A9UxeVoY4iweyaFjS5TavZN97Hfehph0nhsZnjlVKzEQSrQ==}
+    engines: {node: '>=14'}
     hasBin: true
     dev: true
 

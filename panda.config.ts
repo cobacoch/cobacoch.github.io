@@ -1,26 +1,29 @@
-import { defineConfig } from "@pandacss/dev"
+import { defineConfig } from "@pandacss/dev";
 
 export default defineConfig({
-    // Whether to use css reset
-    preflight: true,
-    
-    // Where to look for your css declarations
-    include: ["./src/components/**/*.{js,jsx,ts,tsx}", "./src/app/**/*.{js,jsx,ts,tsx}"],
+  // Whether to use css reset
+  preflight: true,
 
-    // Files to exclude
-    exclude: [],
+  // Where to look for your css declarations
+  include: [
+    "./src/components/**/*.{js,jsx,ts,tsx}",
+    "./src/app/**/*.{js,jsx,ts,tsx}",
+  ],
 
-    // Useful for theme customization
-    theme: {
-      extend: {}
-    },
+  // Files to exclude
+  exclude: [],
 
-    // The output directory for your css system
-    outdir: "src/styled-system",
-    
-    jsxFramework: "react",
+  // Useful for theme customization
+  theme: {
+    extend: {},
+  },
 
-    minify: true,
+  // The output directory for your css system
+  outdir: "src/styled-system",
 
-    hash: true,
-})
+  jsxFramework: "react",
+
+  minify: true,
+
+  hash: true,
+});
