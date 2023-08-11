@@ -40,16 +40,17 @@ jobs:
         with:
           node-version: "18"
           cache: "pnpm"
-      - name: Restore node_modules cache
-        id: restore_node_modules_cache
+      - name: Restore node_modules & styled-system cache
+        id: restore_cache
         uses: actions/cache@v3
         with:
-          path: "**/node_modules"
-          key: ${{ runner.os }}-cache-node_modules-${{ hashFiles('**/pnpm-lock.yaml') }}
-          restore-keys: |
-            ${{ runner.os }}-cache-node_modules-${{ hashFiles('**/pnpm-lock.yaml') }}-
-      - name: 
-        if: ${{ steps.restore_node_modules_cache.outputs.cache-hit != 'true' }}
+          path: |
+            "**/node_modules"
+            "**/styled-system"
+          key: ${{ runner.os }}-cache-${{ hashFiles('**/pnpm-lock.yaml', '**/panda.config.ts') }}
+          restore-keys: ${{ runner.os }}-cache-
+      - name: Install Packages
+        if: ${{ steps.restore_cache.outputs.cache-hit != 'true' }}
         run: pnpm install
       - name: Setup Pages
         uses: actions/configure-pages@v3
