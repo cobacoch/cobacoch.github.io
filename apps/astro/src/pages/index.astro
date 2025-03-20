@@ -1,11 +1,28 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
+import '@fontsource/noto-sans-jp/400.css';
+import '@fontsource/noto-sans-jp/600.css';
+import '@fontsource/noto-sans-jp/700.css';
 
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import '../index.css';
+
+import { css } from '@cobacoch.github.io/styled-system/css';
+import { stack } from '@cobacoch.github.io/styled-system/patterns';
+
+import { Image } from 'astro:assets';
+
+import me from '@assets/me.jpg';
+import RootLayout from '@layouts/RootLayout.astro';
 ---
 
-<Layout>
-	<Welcome />
-</Layout>
+<RootLayout>
+  <div class={stack({ align: 'center', gap: 4, justify: 'center', flexGrow: 1 })}>
+    <div class={stack({ align: 'center', gap: 4, justify: 'center' })}>
+      <Image
+        src={me}
+        alt="cobaco"
+        class={css({ borderRadius: 'full', w: 240, h: 240, boxShadow: 'md' })}
+      />
+      <div class={css({ fontSize: '2xl', fontWeight: 'bold' })}>@cobacoch</div>
+    </div>
+  </div>
+</RootLayout>

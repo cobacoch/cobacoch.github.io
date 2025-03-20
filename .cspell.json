@@ -1,7 +1,21 @@
 {
   "$schema": "https://raw.githubusercontent.com/streetsidesoftware/cspell/main/cspell.schema.json",
   "version": "0.2",
-  "words": ["cobaco", "cobacoch", "codegen", "cssgen", "pandacss"],
+  "words": [
+    "cobaco",
+    "cobacoch",
+    "codegen",
+    "cssgen",
+    "fontsource",
+    "gtag",
+    "GTM-MW9HZSQD",
+    "hstack",
+    "iconify",
+    "noto",
+    "pandacss",
+    "partytown",
+    "vstack"
+  ],
   "useGitignore": true,
   "ignorePaths": ["pnpm-lock.yaml"]
 }

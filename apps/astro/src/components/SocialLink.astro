@@ -1,0 +1,27 @@
+---
+import { css } from '@cobacoch.github.io/styled-system/css';
+import { Icon } from 'astro-icon/components';
+
+interface Props {
+  href: string;
+  iconName: string;
+  label: string;
+}
+
+const { href, label, iconName } = Astro.props;
+---
+
+<a
+  class={css({
+    color: 'inherit',
+    textDecoration: 'none',
+    _hover: {
+        color: 'green.500',
+    }
+  })}
+  href={href}
+  target="_blank"
+  aria-label={label}
+>
+  <Icon name={iconName} size={24} />
+</a>

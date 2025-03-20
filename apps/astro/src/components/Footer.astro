@@ -1,0 +1,37 @@
+---
+import { flex } from '@cobacoch.github.io/styled-system/patterns';
+import { container, hstack } from '@cobacoch.github.io/styled-system/patterns';
+import SocialLink from '@components/SocialLink.astro';
+---
+
+<footer class={container({ w: 'full', h: 16 })}>
+  <div
+    class={flex({
+      smDown: {
+        flexDir: 'column',
+        justifyContent: 'center',
+      },
+      sm: {
+        flexDir: 'row',
+        justifyContent: 'space-between',
+      },
+      align: 'center',
+      gap: 2,
+      h: 'inherit'
+    })}
+  >
+    <small>&copy; 2025 cobaco</small>
+    <div class={hstack()}>
+      <SocialLink
+        href="https://x.com/cobacoch"
+        iconName="ri:twitter-x-line"
+        label="X"
+      />
+      <SocialLink
+        href="https://github.com/cobacoch"
+        iconName="ri:github-fill"
+        label="GitHub"
+      />
+    </div>
+  </div>
+</footer>
