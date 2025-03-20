@@ -6,3 +6,8 @@ dist
 out
 .next
 coverage
+
+## Panda
+styled-system
+styled-system-studio
+!packages/styled-system
