@@ -11,14 +11,14 @@
   },
   "dependencies": {
     "@astrojs/partytown": "2.1.4",
-    "@fontsource/noto-sans-jp": "5.2.5",
-    "astro": "5.5.3",
+    "@fontsource/noto-sans-jp": "5.2.8",
+    "astro": "5.15.3",
     "astro-icon": "1.1.5"
   },
   "devDependencies": {
     "@cobacoch.github.io/styled-system": "workspace:*",
-    "@iconify-json/ri": "1.2.5",
+    "@iconify-json/ri": "1.2.6",
     "@pandacss/dev": "catalog:",
-    "sharp": "0.33.5"
+    "sharp": "0.34.4"
   }
 }
